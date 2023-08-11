@@ -1,10 +1,11 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
-/*
- * main -  Outputs the string Last digit
+
+/**
+ * main - print the last digit of the number stored in the variable
  *
- * Return - Always (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
