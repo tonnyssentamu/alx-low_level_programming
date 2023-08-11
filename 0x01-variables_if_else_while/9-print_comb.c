@@ -1,13 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * prints all possible combinations of single-digit numbers with commas
- *
- * Return: Always (Sucess)
- */
+  * main - prints all possible combinations of single-digit numbers
+  *
+  * Return: Always (Success);
+  */
 int main(void)
 {
-	char c;
+	int c;
 
 	for (c = '0'; c <= '9'; c++)
 	{
@@ -16,7 +16,7 @@ int main(void)
 		if (c != '9')
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 
