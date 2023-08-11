@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include<stdio.h>
 #include<time.h>
-/*
- * my main will contian a coditional statement
- * below is the betty's style for the main function
+/**
+ * main - Prints if number is positive, zero or negative
+ *
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -22,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative \n', n);
+		printf("%d is negative \n", n);
 	}
 
 	return (0);
