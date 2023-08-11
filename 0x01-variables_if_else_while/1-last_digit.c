@@ -2,15 +2,16 @@
 #include<stdio.h>
 #include<time.h>
 /*
- * Outputs the string Last digit
- * followed by n
+ * main -  Outputs the string Last digit
+ *
+ * Return - Always (Success)
  */
 int main(void)
 {
 	int n, lastdig;
 
 	srand(time(0));
-	n = read() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	lastdig = n % 10;
 
 	if (lastdig > 5)
