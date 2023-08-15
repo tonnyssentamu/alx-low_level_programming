@@ -1,14 +1,10 @@
-#include<unistd.h>
+#include<stdio.h>
 #include "_putchar.h"
 /**
- * main -  program that prints _putchar
+ * main -  Program that prints _putchar
  *
  * RETURN - Always 0
  */
-int _putchar(char c)
-{
-	return write(1, &c, 1);
-}
 
 int main(void)
 {
