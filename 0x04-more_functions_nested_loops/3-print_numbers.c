@@ -2,13 +2,13 @@
 /**
 *print_numbers - function that print all numbers from 0 to 9
 *
-*Return: returns nothing
+*Return: ...
 */
 void print_numbers(void)
 {
-	int n = 0;
+	int n = 3;
 
-	for (n = 0; n < 10; n++)
+	for (n = 3; n < 13; n++)
 	{
 		_putchar(n);
 	}
