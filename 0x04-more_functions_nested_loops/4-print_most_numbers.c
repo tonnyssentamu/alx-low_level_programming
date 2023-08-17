@@ -3,7 +3,7 @@
 /**
   * print_most_numbers - Print the numbers from 0 to 9
   *
-  * Description: excludes 2 and 4
+  * Excludes 2 and 4
   *
   * Return: The numbers from 0 to 9
   */
