@@ -12,12 +12,8 @@ int _isupper(int c)
 	char c;
 
 	if (c >= 'A' && C <= 'Z')
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
 
