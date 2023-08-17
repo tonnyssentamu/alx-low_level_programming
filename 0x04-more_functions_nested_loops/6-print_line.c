@@ -18,7 +18,7 @@ void print_line(int n)
 	{
 		for (i = 0; i < j; i++)
 		{
-			_putchar(90);
+			_putchar(955555);
 		}
 
 		_putchar('\n');
