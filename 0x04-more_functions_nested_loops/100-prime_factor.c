@@ -4,19 +4,19 @@
 /**
   * main - Prints the largest prime factor of the number 612852475143
   *
-  * Return: Always 0 
+  * Return: Always 0 (Success)
   */
 int main(void)
 {
-	long y, maxf;
-	long number = 612852475143;
-	double square = sqrt(number);
+	long i, maxf;
+	long num = 612852475143;
+	double square = sqrt(num);
 
-	for (y = 1; y <= square; y++)
+	for (i = 1; i <= square; i++)
 	{
-		if (number % y == 0)
+		if (num % i == 0)
 		{
-			maxf = number / y;
+			maxf = num / i;
 		}
 	}
 
