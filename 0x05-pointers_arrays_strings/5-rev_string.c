@@ -8,26 +8,18 @@
   */
 void rev_string(char *s)
 {
-	int i, c, k;
-	char *a, x;
+	char rev = s[0];
+	int reverse = 0;
+	int i;
 
-	a = s;
+	while (s[reverse] != '\0')
+		reverse++
 
-	while (s[c] != '\0')
+	for (i = 0; i < reverse; i++)
 	{
-		c++;
-	}
-
-	for (k = 1; k < c; k++)
-	{
-		a++;
-	}
-
-	for (i = 0; i < (c / 2); i++)
-	{
-		x = s[i];
-		s[i] = *a;
-		*a = x;
-		a--;
+		reverse--;
+			rev = s[i];
+			s[i] = s[reverse];
+			s[reverse] = rev
 	}
 }
