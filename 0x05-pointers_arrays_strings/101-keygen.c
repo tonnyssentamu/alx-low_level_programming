@@ -22,7 +22,7 @@ int main(void)
 		putchar(password[i] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 - sum - '0';
+			n = (2772 - sum - '0');
 			break;
 		}
 	}
