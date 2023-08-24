@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Change all lowercase letters to uppercase
- * @c: string to play arround
+ * @c: string
  * Return: c
  */
 
