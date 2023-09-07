@@ -4,7 +4,7 @@
 /**
   * array_range - creates an array of integers.
   * @min: maximum
-  * @max: minimum 
+  * @max: minimum
   *
   * Return: integer value
   */
