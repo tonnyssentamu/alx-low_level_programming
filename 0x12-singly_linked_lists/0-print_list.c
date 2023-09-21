@@ -1,31 +1,27 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * main - Prints if number is positive, zero or negative
- *
- * Return: Always (Success)
- */
-int main(void)
+  * print_list - Prints all elements of a list
+  * @h: A linked list
+  *
+  * Return: The number of nodes
+  */
+size_t print_list(const list_t *h)
 {
-	int n;
+	size_t count = 0;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
 
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
+		h = h->next;
+		count++;
 	}
 
-	return (0);
+	return (count);
 }
