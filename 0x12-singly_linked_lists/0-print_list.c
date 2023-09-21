@@ -1,22 +1,31 @@
-#include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
-/**
- * print_listint - Prints all the elements of a listint_t list.
- * @h: A pointer to the head of the list_t list.
- *
- * Return: The number of nodes in the list_t list.
- */
-size_t print_listint(const listint_t *h)
-{
-	size_t nodes = 0;
+#include <time.h>
+#include <stdio.h>
 
-	while (h)
+/**
+ * main - Prints if number is positive, zero or negative
+ *
+ * Return: Always (Success)
+ */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
 	{
-		nodes++;
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
 	}
 
-	return (nodes);
+	return (0);
 }
