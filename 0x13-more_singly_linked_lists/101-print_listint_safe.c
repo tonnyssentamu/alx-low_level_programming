@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <stddef.h>
 /**
  * find_listint_loop_pl - finds a loop in a linked list
  *
@@ -35,6 +35,7 @@ listint_t *find_listint_loop_pl(listint_t *head)
  *
  * Return: number of nodes printed
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t len = 0;
